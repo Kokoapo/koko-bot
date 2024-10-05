@@ -1,0 +1,18 @@
+{
+  "name": "koko-bot",
+  "version": "1.0.0",
+  "description": "KOOOKOOO DA YOOOOOOOOOOOOOOO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "deploy": "node deploy_commands.js",
+    "dev": "node deploy_commands.js && node index.js"
+  },
+  "author": "kokoapo",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  }
+}
