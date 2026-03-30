@@ -2,8 +2,8 @@ const { SlashCommandBuilder } = require('discord.js')
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("coin")
-        .setDescription("Does a Super Coin Flip! Flips coins until we got 1d(1d6) heads or tails"),
+        .setName("moeda")
+        .setDescription("Faz um super cara ou coroa! Gira a moeda até termos 1d(dados[1d6]) caras ou coroas, quem tiver mais ganha! Sendo dados = [4, 6, 8, 10, 12, 20]"),
     async execute(interaction) {
         let dices = [4, 6, 8, 10, 12, 20];
 
@@ -23,14 +23,14 @@ module.exports = {
             }
 
             if (head == rolls) {
-                winner = "Head";
+                winner = "Cara";
                 break;
             } else if (tails == rolls) {
-                winner = "Tails";
+                winner = "Coroa";
                 break;
             }
         }
 
-        await interaction.reply(`${winner} Won!`);
+        await interaction.reply(`${winner} Ganhou!`);
     }
 };
