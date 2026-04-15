@@ -3,7 +3,7 @@ const { SlashCommandBuilder } = require('discord.js')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("moeda")
-        .setDescription("Faz um super cara ou coroa! Gira a moeda até termos 1d(dados[1d6]) caras ou coroas, quem tiver mais ganha! Sendo dados = [4, 6, 8, 10, 12, 20]"),
+        .setDescription("Gira a moeda até ter 1d(dados[1d6]) caras/coroas, Sendo dados = [4, 6, 8, 10, 12, 20]"),
     async execute(interaction) {
         let dices = [4, 6, 8, 10, 12, 20];
 
